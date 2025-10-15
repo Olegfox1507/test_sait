@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Flight</title>
+  </head>
+
+  <body>
+    <!--Шапка сайта-->
+    <header>
+      <!--Главная навигация-->
+      <nav>
+        <a href="index.html"><img src="img/Logo.png" alt="Logo" /></a>
+        <ul>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Поиск</a></li>
+          <li><a href="#">Регистрация на рейс</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Основное содержимое страницы-->
+      <section>
+        <!--Бронирование-->
+        <h2>Запусти свой рейс с нуля</h2>
+        <div class="step-container">
+          <div class="step-item">
+            <h3>Ваша дата</h3>
+            <label for="demo-date">Выберите дату:</label>
+            <input type="date" id="demo-date" value="2025-11-20" />
+          </div>
+
+          <div class="step-item">
+            <h3>Бронирование</h3>
+            <label for="demo-slider">Выбери число бронирования:</label>
+            <input type="range" id="demo-slider" min="0" max="100" value="10" />
+          </div>
+
+          <div class="step-item">
+            <h3>Лучшая цена</h3>
+            <p>Цена: 9000 руб.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!--Доверие компании-->
+        <h2>Вы Нам Доверие – Мы Вам Гарантии</h2>
+
+        <div class="guarantees">
+          <article class="guarantee-card">
+            <h3>100% возврат</h3>
+            <p>
+              Если рейс не набирает 50% бронирований до дедлайна, мы гарантируем
+              возврат средств в течение 24 часов.
+            </p>
+            <img src="#" alt="" />
+          </article>
+
+          <article class="guarantee-card">
+            <h3>Честная цена</h3>
+            <p>
+              Ваша скидка, полученная после набора 50%, фиксируется и
+              гарантированно не изменится вплоть до вылета.
+            </p>
+            <img src="#" alt="" />
+          </article>
+
+          <article class="guarantee-card">
+            <h3>Мы летим по вашему маршруту</h3>
+            <p>
+              Забудьте о пересадках. Выбирайте, куда лететь, и мы запустим
+              прямой рейс. EasyFlight существует, чтобы создавать нужные вам
+              маршруты, а не только выгодные для нас.
+            </p>
+            <img src="#" alt="" />
+          </article>
+        </div>
+      </section>
+
+      <form>
+        <!--Форма поиска-->
+        <h2>Вместе в полёт</h2>
+
+        <div class="search-fields">
+          <div class="input-city">
+            <label for="from_city">Откуда</label>
+            <input
+              type="text"
+              id="from_city"
+              name="from_city"
+              placeholder="Откуда"
+              required
+            />
+
+            <label for="to_city">Куда</label>
+            <input
+              type="text"
+              id="to_city"
+              name="to_city"
+              placeholder="Куда"
+              required
+            />
+          </div>
+
+          <div class="input-date">
+            <label for="date_out">Туда</label>
+            <input type="date" id="date_out" name="date_out" required />
+
+            <label for="date_back">Обратно (не обязательно)</label>
+            <input type="date" id="date_back" name="date_back" />
+          </div>
+
+          <div class="input-passengers">
+            <label for="passengers">Пассажиров</label>
+            <select id="passengers" name="passengers" required>
+              <option value="" disabled selected></option>
+
+              <option value="1">1 Пассажир</option>
+              <option value="2">2 Пассажира</option>
+              <option value="3">3 Пассажира</option>
+              <option value="4">4 Пассажира</option>
+              <option value="5">5 Пассажиров</option>
+              <option value="6">6 Пассажиров</option>
+              <option value="7">7 Пассажиров</option>
+              <option value="8">8 Пассажиров</option>
+            </select>
+          </div>
+
+          <button type="submit" class="complit-search">Найти рейс</button>
+        </div>
+      </form>
+
+      <section>
+        <!--Акции-->
+        <h2>Плати меньше</h2>
+        <article>
+          <img src="#" alt="" />
+          <h3>Лёгкий старт</h3>
+          <p>
+            Бронируйте и оплачивайте билет в первые 48 часов после объявления
+            маршрута, и мы гарантированно дарим вам дополнительную скидку 20% к
+            вашей финальной цене, как только рейс подтвердится. Вы наш главный
+            партнер!
+          </p>
+        </article>
+        <article>
+          <img src="#" alt="" />
+          <h3>Вместе в полёт</h3>
+          <p>
+            Соберите друзей! При одновременном бронировании трех билетов на один
+            и тот же рейс (который еще не подтвержден), четвертый билет мы
+            оформляем вам в подарок. Это поможет рейсу гарантированно взлететь!
+          </p>
+        </article>
+        <article>
+          <img src="#" alt="" />
+          <h3>Гибкий возврат</h3>
+          <p>
+            Если ваши планы внезапно изменились, вы можете отменить бронирование
+            и получить полный 100% возврат средств, даже если рейс уже набрал
+            50% бронирований. Действует до момента официального подтверждения
+            рейса. Летайте без стресса!
+          </p>
+        </article>
+      </section>
+
+      <form>
+        <!--Форма подписки на акции-->
+        <h2>Вступайте в EasyClub</h2>
+        <label for="email">Ваш Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your.name@email.ru"
+          required
+        />
+        <div>
+          <input
+            type="checkbox"
+            id="data_consent"
+            name="data_consent"
+            required
+          />
+          <label for="data_consent"
+            >Я даю согласие на обработку персональных данных.</label
+          >
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="terms_consent"
+            name="terms_consent"
+            required
+          />
+
+          <label for="terms_consent">
+            Я ознакомлен с
+            <a href="#" target="_blank">условиями акций</a>
+          </label>
+        </div>
+
+        <button type="submit">Подписаться</button>
+      </form>
+    </main>
+
+    <footer>
+      <!--Подвал сайта-->
+
+      <a href="index.html"><img src="img/Logo.png" alt="Logo" /></a>
+
+      <p>Телефон: 8 (800) 111-22-33</p>
+
+      <ul>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Поиск</a></li>
+        <li><a href="#">Регистрация на рейс</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#"><img src="#" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="#" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="#" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="#" alt="" /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
